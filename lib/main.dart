@@ -43,33 +43,13 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return MaterialApp(
     home: Scaffold(
-      drawer: Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(
-          decoration: BoxDecoration(
-            color: Colors.blue,
-
-          
-            ),
-            child: Text("Na box be this"),
-          ),
-          ListTile(
-            title: const Text("DoDODODODODODODODO"),
-          ),
-
-          
-        ],
-      ),
-    ),
        body: Align(
          alignment: Alignment.topLeft,
          child: LayoutBuilder(
            builder: (BuildContext context, BoxConstraints constraints) {
              return Row(children: [
                Container(
-               width: constraints.maxWidth,
+               width: constraints.maxWidth / 2,
                height: constraints.maxHeight,
                color: Colors.red,
                alignment: Alignment.topRight,
